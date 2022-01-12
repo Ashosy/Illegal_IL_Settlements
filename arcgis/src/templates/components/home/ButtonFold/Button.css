@@ -1,0 +1,83 @@
+.btn {
+  color: black;
+  background-color: wheat;
+  font-size: 60px;
+  border-radius: 50%;
+  /* padding-top: 10px; */
+  /* padding-left: 12px; */
+  margin-left: 0px;
+  width: 55%;
+  height: auto;
+  /* padding-top: 2%; */
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+  /* border: 2px solid gray; */
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  transition: 0.5s;
+  color: rgb(221, 177, 96);
+}
+
+/* #play:hover{
+    color: blanchedalmond;
+    transition: 0.5s;
+    cursor: none;
+    
+
+} */
+
+.btn:focus {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.play-btn {
+  padding-top: 12px;
+  font-size: 50px;
+  position: relative;
+  padding-left: 8px;
+}
+
+.btn-container {
+  /* border: 2px solid red; */
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  z-index: 1000;
+  margin-top: 42%;
+  margin-left: 5%;
+  /* border: 3px solid steelblue; */
+}
+
+@media screen and (max-width: 700px) {
+  .btn-container {
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 120px;
+    z-index: 1000;
+    margin-top: 35%;
+    margin-left: 5%;
+  }
+  .btn {
+    font-size: 0px;
+    font-size: 45px;
+    border-radius: 50%;
+    width: 47%;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+  }
+  .play-btn {
+    padding-top: 0px;
+    font-size: 30px;
+    position: relative;
+    padding-left: 5px;
+  }
+}

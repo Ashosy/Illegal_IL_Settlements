@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import QuizPage from "./templates/components/quiz/Quiz_page";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import OnScreen from "./templates/components/quiz/OnScreen";
+import onVirtual from "./templates/components/quiz/onVirtual";
+import Home from "./templates/components/home/home";
+import Chronology from "./templates/components/chronology/chronology";
 
+function componentDidMount() {
+  // Load Python.
+  window
+    .loadPyodide({ indexURL: "https://cdn.jsdelivr.net/pyodide/v0.17.0/full/" })
+    .then((pyodide) => {
+      // Run Python.
+      pyodide
+        .runPythonAsync(
+          `
+import sys
+sys.version
+`
+        )
+        .then((version) => {
+          this.setState({ version, pyodide });
+        });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
 function App() {
+  componentDidMount();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/chronology" component={Chronology} />
+        <Route exact path="/quiz" component={QuizPage} />
+        <Route exact path="/onScreen" component={OnScreen} />
+        <Route exact path="/onVirtual" component={onVirtual} />
+      </Switch>
+    </Router>
   );
 }
 

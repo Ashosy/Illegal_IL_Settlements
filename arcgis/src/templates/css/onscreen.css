@@ -1,0 +1,107 @@
+.wrapper_2 {
+  background-color: rgb(194, 193, 161);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 60px;
+  height: 70vh;
+  border-radius: 30px;
+
+  justify-content: center;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  align-items: center;
+  /* min-height: 100vh; */
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+.question-section {
+  width: 100%;
+  position: relative;
+  /* border: 2px solid gray; */
+  /* margin: 0 auto; */
+}
+
+.question-count {
+  margin-bottom: 20px;
+  /* border: 2px solid gray; */
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 0 15px;
+  /* border: 2px solid wheat; */
+}
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  background-color: grey;
+  border-radius: 15px;
+  padding: 50px;
+  color: white;
+  width: 490px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10%;
+  height: min-content;
+  min-height: 200px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .app {
+  background-color: grey;
+  width: 450px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.btn1 {
+  width: 60%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(128, 124, 109);
+  border-radius: 15px;
+  /* display: flex; */
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 10vh;
+  border: 5px solid rgb(221, 212, 173);
+  cursor: pointer;
+}

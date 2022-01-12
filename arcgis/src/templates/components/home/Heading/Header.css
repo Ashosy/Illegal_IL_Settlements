@@ -1,0 +1,9 @@
+.header {
+  position: absolute;
+  z-index: 12;
+  color: whitesmoke;
+  font-size: 22px;
+  letter-spacing: 2.5px;
+  margin-top: 20%;
+  margin-left: 5%;
+}

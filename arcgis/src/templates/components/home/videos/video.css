@@ -1,0 +1,8 @@
+.video{
+    margin: 0px;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+
+}
