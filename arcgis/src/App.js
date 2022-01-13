@@ -4,6 +4,7 @@ import OnScreen from "./templates/components/quiz/OnScreen";
 import onVirtual from "./templates/components/quiz/onVirtual";
 import Home from "./templates/components/home/home";
 import Chronology from "./templates/components/chronology/chronology";
+import Map from "./templates/components/map/map";
 
 function componentDidMount() {
   // Load Python.
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/chronology" component={Chronology} />
         <Route exact path="/quiz" component={QuizPage} />
+        <Route exact path="/map" component={Map} />
         <Route exact path="/onScreen" component={OnScreen} />
         <Route exact path="/onVirtual" component={onVirtual} />
       </Switch>
